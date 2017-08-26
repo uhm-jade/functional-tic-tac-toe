@@ -262,7 +262,6 @@ love.keypressed = function(key)
     if not (_.isEqual(newBoard, board)) then
       _.push(boards, newBoard)
       winnerTriplets = getWinnerTriplets(newBoard)
-      print(#winnerTriplets[1], #winnerTriplets[2])
     end
   end
   if key == 'escape' then

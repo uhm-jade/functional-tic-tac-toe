@@ -229,7 +229,6 @@ love.keypressed = (key) ->
 		unless _.isEqual newBoard, board
 			_.push boards, newBoard
 			winnerTriplets = getWinnerTriplets newBoard
-			print #winnerTriplets[1], #winnerTriplets[2]
 
 	if key == 'escape'
 		boards = {emptyBoard!}
